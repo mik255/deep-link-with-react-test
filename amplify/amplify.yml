@@ -3,3 +3,6 @@ customHeaders:
     headers:
       - key: Content-Type
         value: application/json
+files:
+  - '**/*'
+  - .well-known/assetlinks.json
