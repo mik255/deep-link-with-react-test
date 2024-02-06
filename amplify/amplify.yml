@@ -9,5 +9,5 @@ files:
   - .well-known/apple-app-site-association
 
 cache:
-  - pattern: '**/*.json'
+  - pattern: .well-known/assetlinks.json
     ttl: 0
