@@ -3,3 +3,11 @@ customHeaders:
     headers:
       - key: Content-Type
         value: application/json
+files:
+  - '**/*'
+  - .well-known/assetlinks.json
+  - .well-known/apple-app-site-association
+
+cache:
+  - pattern: '**/*.json'
+    ttl: 0
