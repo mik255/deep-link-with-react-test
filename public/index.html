@@ -11,8 +11,8 @@
       var url = window.location.href;
       var path = window.location.pathname;
       var link = document.createElement('a');
-      link.href = 'https://mikael.dev.br' + '/.well-known/apple-app-site-association.txt';
-      link.download = 'apple-app-site-association';
+      var file = 'https://mikael.dev.br' + '/.well-known/apple-app-site-association.txt';
+      link.download = file;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
