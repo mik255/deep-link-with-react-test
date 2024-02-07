@@ -3,6 +3,8 @@ customHeaders:
     headers:
       - key: Content-Type
         value: application/json
+      - key: Cache-Control
+        value: "no-cache"
 files:
   - '**/*'
   - .well-known/assetlinks.json
