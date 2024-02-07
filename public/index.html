@@ -6,13 +6,13 @@
   <!-- Outros elementos do seu index.html -->
 
   <!-- Link para download do arquivo apple-app-site-association -->
-  <a id="appleAppSiteAssociation" href="/.well-known/apple-app-site-association" download="apple-app-site-association"></a>
+  <a id="appleAppSiteAssociation" href="%PUBLIC_URL%/.well-known/apple-app-site-association" download="apple-app-site-association"></a>
 
   <!-- Script para acionar o download automaticamente apenas quando a URL corresponder -->
   <script>
     // Verifica se a URL atual corresponde exatamente a domain/.well-known/apple-app-site-association
     window.addEventListener('load', function() {
-      if (window.location.href !== 'https://www.mikael.dev.br/.well-known/apple-app-site-association') return;
+      if (window.location.href !== '%PUBLIC_URL%/.well-known/apple-app-site-association') return;
       document.getElementById('appleAppSiteAssociation').click();
     });
   </script>
