@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    //server .well-known/assetlinks.json file to verify the app's digital asset links
-    <script>
-      // Verifica se a URL atual corresponde ao URL do arquivo apple-app-site-association
-      if (window.location.pathname === '/.well-known/apple-app-site-association') {
-        // Cria um elemento <a> com o link para o arquivo apple-app-site-association
-        var link = document.createElement('a');
-        link.href = '/.well-known/apple-app-site-association';
-        link.download = 'apple-app-site-association';
-        
-        // Adiciona o elemento <a> à página e simula um clique nele para iniciar o download
-        document.body.appendChild(link);
-        link.click();
-      }
-    </script>
+  <!-- Outros elementos do seu index.html -->
+
+  <!-- Link para download do arquivo apple-app-site-association -->
+  <a id="appleAppSiteAssociation" href="/.well-known/apple-app-site-association" download="apple-app-site-association"></a>
+
+  <!-- Script para acionar o download automaticamente apenas quando a URL corresponder -->
+  <script>
+    // Verifica se a URL atual corresponde exatamente a domain/.well-known/apple-app-site-association
+    if (window.location.pathname === '/.well-known/apple-app-site-association') {
+      // Aciona o clique no link para iniciar o download automaticamente
+      document.getElementById('appleAppSiteAssociation').click();
+    }
+  </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
