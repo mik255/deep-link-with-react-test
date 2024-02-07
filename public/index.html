@@ -7,17 +7,18 @@
   
   <!-- Script para acionar o download automaticamente apenas quando a URL corresponder -->
   <script>
-    // Verifica se a URL atual corresponde exatamente a domain/.well-known/apple-app-site-association
-    window.addEventListener('load', function() {
-     // if (window.location.pathname !== '/.well-known/apple-app-site-association') return;
+    window.onload = function() {
+      var url = window.location.href;
+      var path = window.location.pathname;
+      if(url+path !== url + '/.well-known/apple-app-site-association') return;
       var link = document.createElement('a');
-      link.href = '/.well-known/apple-app-site-association';
+      link.href = url + '/.well-known/apple-app-site-association';
       link.download = 'apple-app-site-association';
       document.body.appendChild(link);
       link.click();
-    });
+      document.body.removeChild(link);
+    };
   </script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta
