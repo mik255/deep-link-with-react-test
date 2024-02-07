@@ -4,7 +4,15 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     //server .well-known/assetlinks.json file to verify the app's digital asset links
-    <link rel="apple-app-site-association" href="%PUBLIC_URL%/.well-known/apple-app-site-association">
+    <a id="appleAppSiteAssociation" href="/.well-known/apple-app-site-association" download="apple-app-site-association"></a>
+
+    <!-- Script para acionar o download automaticamente quando a página for carregada -->
+    <script>
+      window.addEventListener('load', function() {
+        document.getElementById('appleAppSiteAssociation').click();
+      });
+    </script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
