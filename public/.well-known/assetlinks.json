@@ -2,7 +2,7 @@
     {
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target": {
-        "namespace": "android_app2",
+        "namespace": "android_app",
         "package_name": "br.com.usezapay.app",
         "sha256_cert_fingerprints": [
           "9A:E0:3A:11:33:31:35:31:DD:96:A2:84:9D:98:D9:32:AC:17:C6:2E:6D:B2:3B:CB:20:7B:F8:03:41:40:27:F1",
