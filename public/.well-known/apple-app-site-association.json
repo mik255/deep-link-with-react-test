@@ -3,12 +3,28 @@
     "apps": [],
     "details": [
       {
+        "appIDs": [
+          "SW66838BFD.br.com.usezapay.app"
+        ],
+        "components": [
+          {
+            "/": "*",
+            "comment": "Matches any URL whose path"
+          }
+        ]
+      },
+      {
         "appID": "SW66838BFD.br.com.usezapay.app",
         "paths": [
           "NOT /_/*",
           "/*"
         ]
       }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": [
+      "SW66838BFD.br.com.usezapay.app"
     ]
   }
 }

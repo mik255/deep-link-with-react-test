@@ -1,6 +1,0 @@
-redirects:
-  - source: /apple-app-site-association
-    target: /.well-known/apple-app-site-association.json
-    status: 200
-    headers:
-      Content-Disposition: "attachment"
