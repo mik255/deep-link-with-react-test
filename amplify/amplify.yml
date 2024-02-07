@@ -11,13 +11,13 @@ files:
       headers:
         - key: Cache-Control
           value: "no-cache"
-  - .well-known/apple-app-site-association.json:
+  - .well-known/apple-app-site-association:
       headers:
         - key: Cache-Control
           value: "no-cache"
 
 cache:
-  - pattern: .well-known/apple-app-site-association.json
+  - pattern: .well-known/apple-app-site-association
     ttl: 0
-  - pattern: .well-known/assetlinks.json
+  - pattern: .well-known/assetlinks
     ttl: 0
