@@ -9,7 +9,7 @@
   <script>
     // Verifica se a URL atual corresponde exatamente a domain/.well-known/apple-app-site-association
     window.addEventListener('load', function() {
-      if (window.location.pathname !== '/.well-known/apple-app-site-association') return;
+     // if (window.location.pathname !== '/.well-known/apple-app-site-association') return;
       var link = document.createElement('a');
       link.href = '/.well-known/apple-app-site-association';
       link.download = 'apple-app-site-association';
