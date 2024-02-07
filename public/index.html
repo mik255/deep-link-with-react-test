@@ -11,10 +11,10 @@
   <!-- Script para acionar o download automaticamente apenas quando a URL corresponder -->
   <script>
     // Verifica se a URL atual corresponde exatamente a domain/.well-known/apple-app-site-association
-    if (window.location.pathname === '/.well-known/apple-app-site-association') {
-      // Aciona o clique no link para iniciar o download automaticamente
+    window.addEventListener('load', function() {
+      if (window.location.href !== 'https://www.mikael.dev.br/.well-known/apple-app-site-association') return;
       document.getElementById('appleAppSiteAssociation').click();
-    }
+    });
   </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
