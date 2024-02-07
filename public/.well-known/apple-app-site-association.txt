@@ -1,3 +1,5 @@
+Content-Disposition: attachment
+
 {
   "applinks": {
     "apps": [],
