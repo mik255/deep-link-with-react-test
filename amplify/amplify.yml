@@ -7,8 +7,14 @@ customHeaders:
         value: "no-cache"
 files:
   - '**/*'
-  - .well-known/assetlinks.json
-  - .well-known/apple-app-site-association
+  - .well-known/assetlinks.json:
+      headers:
+        - key: Cache-Control
+          value: "no-cache"
+  - .well-known/apple-app-site-association:
+      headers:
+        - key: Cache-Control
+          value: "no-cache"
 
 cache:
   - pattern: .well-known/assetlinks.json
